@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/widget_toolbar"/>
+
+    <Button
+        android:layout_marginTop="@dimen/dp_80"
+        android:id="@+id/btn_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载中"/>
+
+    <Button
+        android:id="@+id/btn_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正常显示"/>
+
+    <Button
+        android:id="@+id/btn_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数据为空"/>
+
+    <Button
+
+        android:id="@+id/btn_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载失败"/>
+</LinearLayout>

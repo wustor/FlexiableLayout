@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="name">
+        <item>韩寒</item>
+        <item>郭敬明</item>
+        <item>罗永浩</item>
+        <item>余华</item>
+    </string-array>
+
+
+</resources>

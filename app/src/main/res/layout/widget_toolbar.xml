@@ -1,0 +1,25 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:background="@color/black_back"
+    android:tag="title"
+    app:contentInsetStart="0dp"
+    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <TextView
+        android:id="@id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="标题"
+        android:textColor="@color/white_text"
+        android:textSize="17sp"/>
+
+
+</android.support.v7.widget.Toolbar>
