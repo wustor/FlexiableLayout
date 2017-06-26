@@ -9,7 +9,6 @@ import com.fatchao.mvpbasedemo.presenter.MainPresenter;
 
 public class ChooseActivity extends BaseActivity<MainPresenter, MainBean> {
 
-
     @Override
     protected int getLayoutId() {
         return R.layout.activity_choose;
@@ -18,7 +17,6 @@ public class ChooseActivity extends BaseActivity<MainPresenter, MainBean> {
     @Override
     protected void initViews() {
         setTitle("状态选择");
-
     }
 
     @Override
@@ -37,7 +35,12 @@ public class ChooseActivity extends BaseActivity<MainPresenter, MainBean> {
 
     @Override
     protected void getData() {
-        showRightPage(1);
+        getWindow().getDecorView().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                showRightPage(1);
+            }
+        }, 3000);
     }
 
     @Override

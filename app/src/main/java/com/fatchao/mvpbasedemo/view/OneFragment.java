@@ -17,7 +17,7 @@ public class OneFragment extends BaseFragment<MainPresenter, MainBean> {
 
     @Override
     protected void initCustomView(View view) {
-        setTitle("韩寒");
+        setTitle("韩寒的标题栏");
     }
 
     @Override
@@ -27,6 +27,7 @@ public class OneFragment extends BaseFragment<MainPresenter, MainBean> {
 
     @Override
     protected MainPresenter initPresenter() {
+        showRightPage(1);
         return new MainPresenter();
     }
 

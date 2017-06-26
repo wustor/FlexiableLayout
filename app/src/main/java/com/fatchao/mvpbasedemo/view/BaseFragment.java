@@ -40,12 +40,15 @@ public abstract class BaseFragment<T extends BasePresenter, V> extends Fragment 
     public void showRightPage(int code) {
         switch (code) {
             case 0:
-                mFlexibleLayout.showPageWithState(FlexibleLayout.State.Normal);
+                mFlexibleLayout.showPageWithState(FlexibleLayout.State.Loading);
                 break;
             case 1:
-                mFlexibleLayout.showPageWithState(FlexibleLayout.State.Empty);
+                mFlexibleLayout.showPageWithState(FlexibleLayout.State.Normal);
                 break;
             case 2:
+                mFlexibleLayout.showPageWithState(FlexibleLayout.State.Empty);
+                break;
+            case 3:
                 mFlexibleLayout.showPageWithState(FlexibleLayout.State.NetWorkError);
                 break;
         }

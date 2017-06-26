@@ -17,7 +17,7 @@ public class FourFragment extends BaseFragment<MainPresenter, MainBean> {
 
     @Override
     protected void initCustomView(View view) {
-        setTitle("余华");
+        setTitle("余华的标题栏");
 
     }
 
@@ -33,7 +33,13 @@ public class FourFragment extends BaseFragment<MainPresenter, MainBean> {
 
     @Override
     protected void getData() {
-        showRightPage(2);
+        showRightPage(0);
+        getActivity().getWindow().getDecorView().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                showRightPage(3);
+            }
+        }, 3000);
     }
 
     @Override

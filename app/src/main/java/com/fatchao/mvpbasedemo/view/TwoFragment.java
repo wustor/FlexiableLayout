@@ -32,7 +32,6 @@ public class TwoFragment extends BaseFragment<MainPresenter, MainBean> {
     }
     @Override
     protected void getData() {
-        showRightPage(0);
 
     }
     @Override

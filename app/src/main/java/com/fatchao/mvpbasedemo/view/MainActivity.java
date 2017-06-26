@@ -67,13 +67,32 @@ public class MainActivity extends BaseActivity<MainPresenter, MainBean> {
     @Override
     protected MainPresenter initPresenter() {
         mType = getIntent().getIntExtra("type", 0);
+        switch (mType) {
+            case 0:
+                setTitle("正在加载");
+                break;
+            case 1:
+                setTitle("加载成功");
+                break;
+            case 2:
+                setTitle("数据为空");
+                break;
+            case 3:
+                setTitle("加载失败");
+                break;
+        }
         return new MainPresenter();
     }
 
     @Override
     protected void getData() {
-        showRightPage(mType);
-//        presenter.getData();
+        showRightPage(0);
+        getWindow().getDecorView().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                showRightPage(mType);
+            }
+        }, 3000);
     }
 
 

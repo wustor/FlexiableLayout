@@ -44,6 +44,6 @@ public class ThreeFragment extends BaseFragment<MainPresenter, MainBean> {
 
     @Override
     protected void getData() {
-        showRightPage(1);
+        showRightPage(2);
     }
 }

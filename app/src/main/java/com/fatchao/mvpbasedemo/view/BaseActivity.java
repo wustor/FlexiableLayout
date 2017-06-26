@@ -111,6 +111,7 @@ public abstract class BaseActivity<T extends BasePresenter, V> extends AppCompat
     protected abstract void initListener();//初始化监听事件
 
     protected abstract T initPresenter();//初始化Presenter
+
     protected abstract void getData();
 
 
