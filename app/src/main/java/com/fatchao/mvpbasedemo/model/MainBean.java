@@ -20,4 +20,5 @@ public class MainBean implements Serializable {
     }
 
     private String mString;
+    private String mGoods;
 }
